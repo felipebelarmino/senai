@@ -13,7 +13,7 @@ main{
 .container{
   display: flex;
   flex-direction: column;
-  background: rgb(192, 191, 188);
+  background: rgb(162, 179, 190);
   width: 100%;
   height: 100%;
   align-items: center;
@@ -26,8 +26,8 @@ main{
   align-items: center;
   width: 100%;
   height: 50px;
-  font:bold 1.5rem sans-serif;
-  
+  font: bold 1.8rem 'Nunito', sans-serif;
+  color: rgb(53, 86, 93);
 }
 
 .input {
@@ -36,31 +36,46 @@ main{
   height: 50px;
   justify-content: space-between;
   align-items: center;
+  color: rgb(57, 88, 95);
+  font: bold 1.5rem 'Nunito', sans-serif;
 }
 .input input {
   width: 200px;
   height: 50px;
   border-radius: 5px;
+  border:2px dashed ;
   border:none;
   outline: 0;
-  font: bold 1.5rem sans-serif;
+  font: bold 1.5rem 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
   text-align: center;
   
 }
 
 .input label {
-  font: bold 1.5rem sans-serif;
+  /* font: bold 1.5rem sans-serif; */
+  font: bold 1.5rem 'Nunito', sans-serif;
 }
 
 button{
   width: 350px;
   height: 40px;
-  font: bold 1.2rem sans-serif;
-  background: #000;
-  color: rgb(202, 201, 196);
+  font: bold 1.2rem "Nunito" , sans-serif;
+  background: rgb(226, 231, 231);
+  box-shadow: 0px 0px 10px rgb(110, 110, 110);
+  color: rgb(57, 88, 95);
   outline: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer; 
+  transition: 300ms; 
+}
+button:hover {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(141, 195, 207);
+}
+button:active {
+  background: rgb(226, 231, 231);
 }
 
 .result{
@@ -68,13 +83,74 @@ button{
   margin-top: 20px;
   align-items: center;
   width: 350px;
-  height: 150px;
-  border-radius: 5px;
-  font: italic 1.5rem serif;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px dashed ;
+  font: bold 1.2rem "Nunito" , sans-serif;
   box-shadow: 0px 0px 10px black;
-  background: #000;
-  color: rgb(202, 202, 199);
+  background: rgb(226, 231, 231);
+  color: rgb(72, 109, 117);
   padding: 20px;
   box-sizing: border-box;
   user-select: none;
 }
+
+/*new*/
+/* 
+
+
+.input-block label{
+  color: #8fa7b3;
+  margin-bottom: .8rem;
+  line-height: 1.5rem;
+}
+.input-block label span{
+  font-size: 1.4rem;
+  color: #8fa7b3;
+  margin-left: 2.4rem;
+  line-height: 1.5;
+}
+.input-block input,
+.input-block textarea{
+  width:100%;
+  background:#d3e2e5;
+  border: 1px solid #d3e2e5;
+  border-radius: 2rem;
+  color:#5c8599;
+  outline:none;
+}
+.input-block input:focus,
+.input-block textarea:focus{
+  box-shadow: 0px 5px 5px 0px #e9ecef;
+  border: 2px dashed #8fa7b3;
+  background:white;
+}
+.input-block input{
+  height: 6.4rem;
+  padding: 0 1.6rem;
+}
+.input-block textarea{
+  height: clamp(12rem, 16rem, 24rem);
+  resize: vertical;
+  padding: 1.6rem;
+  line-height: 2.8rem;
+
+}
+.input-block.images button{
+  border:2px solid #15c3d6e7;
+  width:100%;
+  background: #15c3d6;
+  height: 6.4rem;
+  padding: 0 1.6rem;
+  margin-top:2.4rem;
+  border-radius:2rem;
+  outline:none;
+  transition:background-color 300ms;
+  cursor: pointer;
+}
+.input-block.images button:hover{
+  background: #17dff5;
+}
+.input-block.images button:active{
+  background: #15c3d6;    
+} */
